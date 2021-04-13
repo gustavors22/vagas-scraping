@@ -6,7 +6,7 @@ import (
 	"log"
 )
 
-func Crawler(){
+func Crawler(url string){
 	domain := "programathor.com.br"
 	id := 1
 	c := colly.NewCollector(
@@ -34,5 +34,5 @@ func Crawler(){
 		log.Println("Something went wrong:", err)
 	})
 
-	c.Visit("https://programathor.com.br/jobs?expertise=J%C3%BAnior")
+	c.Visit(url)
 }
