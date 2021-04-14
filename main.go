@@ -35,7 +35,6 @@ func start() {
 			url = "https://programathor.com.br/jobs?contract_type=Est%C3%A1gio"
 		default:
 			fmt.Println("Invalido")
-		
 	}
 
 	crawler.Crawler(url)
